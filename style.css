@@ -1,0 +1,62 @@
+/* Master Styles */
+body {
+    margin: 0px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.placeholder{
+    background-color: red;
+}
+
+.background-container {
+    background-image: url("images/space3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 70px); /* Adjust the height based on your content and header */
+}
+
+/* Nav Styles */
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.left-side{
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 1.2em;
+}
+
+.name-wrapper{
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.link-wrapper{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.link-wrapper a{
+    color: #808000;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.link-wrapper:hover{
+    border-bottom: 1px solid black;
+}
+
+.link-wrapper a:hover{
+    color: black;
+}
